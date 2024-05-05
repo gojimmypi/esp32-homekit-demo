@@ -29,9 +29,9 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DWOLFSSL_USER_SETTINGS")
 set(CMAKE_CURRENT_SOURCE_DIR ".")
 set(COMPONENT_REQUIRES lwip) # we typically don't need lwip directly in wolfssl component
 
-# set(WOLFSSL_ROOT "$ENV{WOLFSSL_ROOT}" )
-set(WOLFSSL_ROOT "c:/workspace/wolfssl-gojimmypi")
-message(STATUS "WOLFSSL_ROOT = ${WOLFSSL_ROOT}")
+set(WOLFSSL_ROOT "$ENV{WOLFSSL_ROOT}" )
+# set(WOLFSSL_ROOT "c:/workspace/wolfssl-gojimmypi")
+message(STATUS "Initial WOLFSSL_ROOT = ${WOLFSSL_ROOT}")
 
 # find the user name to search for possible "wolfssl-username"
 message(STATUS "USERNAME = $ENV{USERNAME}")
