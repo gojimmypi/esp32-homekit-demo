@@ -1,5 +1,9 @@
 # Example for `LED`
 
+The default HomeKit code is 338-77-883. See the [QR Code](./qr_code.png):
+
+![QR Code 338-77-883](./qr_code.png)
+
 ## What it does
 
 It's a "Hello World" example for the HomeKit Demo. It is a code to turn ON and OFF an LED connected to an ESP Module.
