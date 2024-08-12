@@ -166,6 +166,8 @@ homekit_server_config_t config = {
 };
 
 void on_wifi_ready() {
+          homekit_server_init(&config);
+}
 
 void app_main(void) {
         esp_err_t ret = nvs_flash_init();
@@ -174,6 +176,12 @@ void app_main(void) {
                 ret = nvs_flash_init();
         }
         ESP_ERROR_CHECK(ret);
+
+        // Initialize HomeKit storage
+    if (homekit_storage_init() != 0) {
+        ESP_LOGE("HomeKit", "Failed to initialize HomeKit storage");
+        return;
+    }
 
         wifi_init();
         gpio_init();

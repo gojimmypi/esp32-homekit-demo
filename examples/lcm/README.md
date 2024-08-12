@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+
 # Example for `LED`
 
 ## What it does
@@ -12,7 +14,9 @@ Connect `LED` pin to the following pin:
 |------|-------------|----------|
 | `CONFIG_ESP_LED_GPIO` | GPIO number for `LED` pin | "2" Default |
 
+## Scheme
 
+![alt text](./scheme.png)
 
 ## Notes
 
